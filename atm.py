@@ -1,14 +1,11 @@
 p="1234"
-n=int(input("enter your atm password:"))
-if n==p:
-	print("login successful")
-	break
-elif n!=p:
-	print("wrong password try again!")
-	if n==p:
+n=3
+while n>=0:
+	x=input("enter password: ")
+	if x==p:
 		print("login successful")
 		break
 	else:
-		print("wrong password try again!")
-else:
-	print("RUN TO BANK")
+		n-=1
+		print("wrong password")
+		print(f"{n} attempts left")
